@@ -23,3 +23,5 @@ sed -i -e 's,wpad-openssl,wpad-basic-mbedtls,g' target/linux/rockchip/image/armv
 sed -i -e '/KERNEL_TESTING_PATCHVER/d' -e 's/DEFAULT_PACKAGES +=/DEFAULT_PACKAGES += fdisk lsblk kmod-drm-rockchip luci-app-diskman/' -e 's/autocore-arm/autocore/' target/linux/rockchip/Makefile
 
 sed -i 's/Ariaboard/光影猫/' target/linux/rockchip/image/armv8.mk
+
+echo 'src-git modem https://github.com/FUjr/modem_feeds.git;main' >> feeds.conf.default
