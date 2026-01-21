@@ -24,6 +24,8 @@ env:
   DOCKER_PASSWD: ${{ secrets.DOCKER_PASSWD }}
   TZ: Asia/Shanghai
 
+  UPLOAD_FIRMWARE_FOR_RELEASE: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
